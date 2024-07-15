@@ -11,19 +11,19 @@
       <CardHome title="Commandes validé" color="bg-blue-100" icon="" :account="60"/>
     </div>
 
-    <div class="py-5">
-      <UCard>
-        <template #header>
-          <Placeholder class="h-8" />
-        </template>
+<!--    <div class="py-5">-->
+<!--      <UCard>-->
+<!--        <template #header>-->
+<!--          <Placeholder class="h-8" />-->
+<!--        </template>-->
 
-        <Placeholder class="h-32" />
+<!--        <Placeholder class="h-32" />-->
 
-        <template #footer>
-          <Placeholder class="h-8" />
-        </template>
-      </UCard>
-    </div>
+<!--        <template #footer>-->
+<!--          <Placeholder class="h-8" />-->
+<!--        </template>-->
+<!--      </UCard>-->
+<!--    </div>-->
 
   </div>
 </template>

@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import {z} from "zod";
+import type {FormSubmitEvent} from "#ui/types";
 
 definePageMeta({
   layout: 'login'
 })
-
-import {z} from "zod";
-import type {FormSubmitEvent} from "#ui/types";
 
  const auth = ref<Auth>({
     email: '',

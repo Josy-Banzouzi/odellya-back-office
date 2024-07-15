@@ -7,28 +7,33 @@ const links = [
   },
   {
     icon: 'tabler:building-bank',
-    to: '/',
+    to: '/hostings',
     title: 'Hebergement web'
   },
   {
     icon: 'tabler:mail',
-    to: '/',
+    to: '/mails',
     title: 'Adresse mails'
   },
   {
-    icon: 'ic:outline-support-agent',
-    to: '/',
+    icon: 'heroicons:wrench-screwdriver',
+    to: '/services',
     title: 'Services'
   },
   {
     icon: 'tabler:cloud',
-    to: '/',
+    to: '/domaines',
     title: 'Domaines'
   },
   {
     icon: 'tabler:users-group',
-    to: '/',
+    to: '/users',
     title: 'Utilisateurs'
+  },
+  {
+    icon: 'heroicons:user-group',
+    to: '/agents',
+    title: 'Agents'
   }
 ]
 </script>
