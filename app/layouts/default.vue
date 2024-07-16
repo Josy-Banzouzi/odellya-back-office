@@ -1,4 +1,11 @@
 <script setup lang="ts">
+
+const route = useRoute()
+
+function isActive(path: string){
+  return route.path === path;
+}
+
 const links = [
   {
     icon: 'tabler:dashboard',
@@ -49,7 +56,7 @@ const links = [
       </div>
       <div class="px-5 py-3 space-y-3">
         <NuxtLink class="h-10 border-white border rounded-xl border-double flex text-white items-center px-5 space-x-3
-        hover:bg-blue-700 hover:border-white hover:border-2" v-for="(item, index) in links" :key="index" :to="item.to">
+        hover:bg-blue-700 hover:border-white hover:border-2" v-for="(item, index) in links" :key="index" :to="item.to" :class="{ active: isActive(item.to) }">
           <icon :name="item.icon" size="25"/>
           <span>{{item.title}}</span>
         </NuxtLink>
@@ -77,3 +84,11 @@ const links = [
     </div>
   </div>
 </template>
+
+<style scoped>
+
+.active {
+  background-color: rgb(29, 78, 216);
+}
+
+</style>
