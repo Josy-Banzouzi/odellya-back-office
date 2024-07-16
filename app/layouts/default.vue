@@ -13,7 +13,7 @@ const links = [
   {
     icon: 'tabler:mail',
     to: '/mails',
-    title: 'Adresse mails'
+    title: 'Hebergement mail'
   },
   {
     icon: 'heroicons:wrench-screwdriver',
