@@ -63,6 +63,9 @@ const links = [
         </div>
         <div class="flex space-x-3 items-center">
           <p class="p-1 rounded-3xl bg-gray-800">
+            <Icon name="heroicons:moon" size="30" class="text-white"/>
+          </p>
+          <p class="p-1 rounded-3xl bg-gray-800">
             <Icon name="ic:baseline-power-settings-new" size="30" class="text-white"/>
           </p>
           <p class="p-2 bg-blue-950 rounded-xl font-semibold">Josy Banzouzi</p>
