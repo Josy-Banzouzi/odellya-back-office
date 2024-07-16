@@ -14,17 +14,18 @@
   const columns = [{
     key: 'name',
     label: 'Nom'
-  }, {
+  },{
     key: 'firstname',
     label: 'Prenom'
-  }, {
-    key: 'email',
-    label: 'Email'
-  }, {
+  },{
     key: 'email',
     label: 'Adress mail'
-  }, {
-    key: 'actions'
+  },{
+   key: 'role',
+   label: 'Role'
+  },{
+    key: 'actions',
+    label: "Actions"
   }]
 
 
@@ -37,27 +38,32 @@
     {
       name: "Dupont",
       firstname: "Jean",
-      email: "jean.dupont@example.com"
+      email: "jean.dupont@example.com",
+      role: "Agent"
     },
     {
       name: "Martin",
       firstname: "Marie",
-      email: "marie.martin@example.com"
+      email: "marie.martin@example.com",
+      role: "Agent"
     },
     {
       name: "Bernard",
       firstname: "Claude",
-      email: "claude.bernard@example.com"
+      email: "claude.bernard@example.com",
+      role: "Agent"
     },
     {
       name: "Dubois",
       firstname: "Sophie",
-      email: "sophie.dubois@example.com"
+      email: "sophie.dubois@example.com",
+      role: "Agent"
     },
     {
       name: "Moreau",
       firstname: "Luc",
-      email: "luc.moreau@example.com"
+      email: "luc.moreau@example.com",
+      role: "Agent"
     }
   ];
 
