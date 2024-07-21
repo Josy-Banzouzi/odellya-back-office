@@ -2,9 +2,18 @@
 
 const route = useRoute()
 
-function isActive(path: string){
-  return route.path === path;
+function isActive(path: string) {
+  const routeSegments = route.path.split('/');
+  const pathSegments = path.split('/');
+  if (pathSegments.length > routeSegments.length) return false;
+
+  for (let i = 0; i < pathSegments.length; i++) {
+    if (routeSegments[i] !== pathSegments[i]) return false;
+  }
+  return true;
 }
+
+
 
 const links = [
   {
@@ -62,7 +71,7 @@ const links = [
         </NuxtLink>
       </div>
     </div>
-    <div class="h-full w-4/5 bg-gray-300 flex flex-col">
+    <div class="h-full w-4/5 bg-gray-100 flex flex-col">
       <div class="h-16 bg-white shadow flex items-center justify-between px-4">
         <div class="flex text-black space-x-3 items-center">
           <Icon name="tabler:menu-2" size="30"/>
@@ -78,7 +87,7 @@ const links = [
           <p class="p-2 bg-blue-950 rounded-xl font-semibold">Josy Banzouzi</p>
         </div>
       </div>
-      <div class="flex-grow py-5 px-5 text-black">
+      <div class="flex-grow py-5 px-5 text-black" >
           <slot/>
       </div>
     </div>
